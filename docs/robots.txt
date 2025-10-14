@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive directories
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Allow access to main content
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /contact.html
+Allow: /enquiry.html
+
+# Sitemap location
+Sitemap: https://techflow.co.za/sitemap.xml

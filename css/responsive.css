@@ -1,0 +1,572 @@
+/* Responsive Design with Enhanced Conditional Media Queries */
+
+/* Main Navigation Styles */
+.main-nav {
+    display: flex;
+    flex-grow: 1; /* Allow nav to take space */
+    justify-content: center; /* Center nav links container */
+    overflow-x: auto; /* Enable horizontal scroll on small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.main-nav::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on WebKit browsers */
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: nowrap; /* Keep items in a single line */
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem; /* Add padding for small screens */
+    gap: 0.5rem;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+    white-space: nowrap; /* Prevent links from wrapping */
+}
+
+.main-nav a:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+}
+
+/* Style for the active navigation link */
+.main-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}
+
+/* Enhanced Responsive Typography Scale */
+:root {
+    /* Base font sizes using rem for scalability */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+    --font-size-5xl: 3rem;      /* 48px */
+    --font-size-6xl: 3.75rem;   /* 60px */
+
+    /* Responsive spacing using rem */
+    --spacing-xs: 0.25rem;      /* 4px */
+    --spacing-sm: 0.5rem;       /* 8px */
+    --spacing-md: 1rem;         /* 16px */
+    --spacing-lg: 1.5rem;       /* 24px */
+    --spacing-xl: 2rem;         /* 32px */
+    --spacing-2xl: 3rem;        /* 48px */
+    --spacing-3xl: 4rem;        /* 64px */
+}
+
+/* Ultra-wide Desktop Styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-xl);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-6xl); }
+    h2 { font-size: var(--font-size-5xl); }
+    h3 { font-size: var(--font-size-4xl); }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-lg);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-5xl); }
+    h2 { font-size: var(--font-size-4xl); }
+    h3 { font-size: var(--font-size-3xl); }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-nav a {
+        font-size: 1rem; /* Standard desktop font size */
+        padding: 0.6rem 1.1rem;
+    }
+}
+
+/* Tablet Styles - Landscape */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .header {
+        padding: 1.25rem 2rem;
+    }
+
+    .logo img {
+        width: 7rem;
+    }
+
+    .main-nav a {
+        font-size: 0.95rem; /* Slightly smaller for landscape tablets */
+        padding: 0.5rem 1rem;
+    }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Styles - Portrait */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo img {
+        width: 6.5rem;
+    }
+
+    .contact-info {
+        display: none; /* Hide contact info on portrait tablets to save space */
+    }
+
+    .main-nav a {
+        font-size: 0.9rem; /* Smaller for portrait tablets */
+        padding: 0.5rem 0.8rem;
+    }
+
+    h1 { font-size: 2.125rem; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.375rem; }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Small Tablet Styles */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 var(--spacing-lg);
+    }
+
+    .header {
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
+    }
+
+    .logo img {
+        width: 6rem;
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-base);
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    /* Typography scaling */
+    h1 { font-size: var(--font-size-4xl); }
+    h2 { font-size: var(--font-size-3xl); }
+    h3 { font-size: var(--font-size-2xl); }
+    h4 { font-size: var(--font-size-xl); }
+    h5 { font-size: var(--font-size-lg); }
+    h6 { font-size: var(--font-size-base); }
+
+    body {
+        font-size: var(--font-size-base);
+    }
+
+    .btn {
+        width: 100%;
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: var(--font-size-base);
+    }
+
+    /* Services responsive */
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+
+    /* Portfolio responsive */
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+    }
+
+    /* Contact responsive */
+    .contact {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .contact form {
+        padding: var(--spacing-lg);
+    }
+
+    /* Map responsive */
+    .map {
+        padding: var(--spacing-lg);
+        margin: var(--spacing-lg) auto;
+    }
+
+    .map iframe,
+    .contact-iframe {
+        height: 300px;
+    }
+
+    /* Footer responsive */
+    .footer {
+        padding: var(--spacing-lg);
+        font-size: var(--font-size-base);
+    }
+
+    .footer-content {
+        gap: var(--spacing-lg);
+    }
+
+    .social-media {
+        gap: var(--spacing-lg);
+    }
+
+    .social-media a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-media img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-info p {
+        font-size: var(--font-size-sm);
+    }
+
+    .footer-info p:first-child {
+        font-size: var(--font-size-base);
+    }
+
+    .footer-info p:last-child {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Mobile Styles - Large */
+@media (min-width: 481px) and (max-width: 575px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .logo img {
+        width: 5.5rem;
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    /* Typography scaling for mobile */
+    h1 { font-size: var(--font-size-3xl); }
+    h2 { font-size: var(--font-size-2xl); }
+    h3 { font-size: var(--font-size-xl); }
+    h4 { font-size: var(--font-size-lg); }
+    h5 { font-size: var(--font-size-base); }
+    h6 { font-size: var(--font-size-sm); }
+
+    body {
+        font-size: var(--font-size-sm);
+    }
+
+    .btn {
+        width: 100%;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Services responsive */
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Portfolio responsive */
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Contact responsive */
+    .contact {
+        max-width: 100%;
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .contact form {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    /* Map responsive */
+    .map {
+        max-width: 100%;
+        padding: var(--spacing-md);
+        margin: var(--spacing-lg) auto;
+    }
+
+    .map iframe,
+    .contact-iframe {
+        height: 250px;
+    }
+
+    /* Footer responsive */
+    .footer {
+        padding: var(--spacing-lg) var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
+
+    .footer-content {
+        gap: var(--spacing-md);
+    }
+
+    .social-media {
+        gap: var(--spacing-md);
+    }
+
+    .social-media a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-info p {
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-info p:first-child {
+        font-size: var(--font-size-sm);
+    }
+
+    .footer-info p:last-child {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Mobile Styles - Small */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .header {
+        padding: var(--spacing-sm);
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: var(--spacing-md); /* Increase gap for better spacing */
+    }
+
+    .main-nav {
+        order: 2; /* Move nav below logo and contact info */
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+    .main-nav a {
+        font-size: var(--font-size-xs); /* Smallest font size for small mobile */
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    /* Typography scaling for small mobile */
+    h1 { font-size: var(--font-size-2xl); }
+    h2 { font-size: var(--font-size-xl); }
+    h3 { font-size: var(--font-size-lg); }
+    h4 { font-size: var(--font-size-base); }
+    h5 { font-size: var(--font-size-sm); }
+    h6 { font-size: var(--font-size-xs); }
+
+    body {
+        font-size: var(--font-size-xs);
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-xs);
+    }
+
+    /* Enhanced mobile responsiveness */
+    .services-container {
+        gap: var(--spacing-md);
+    }
+
+    .service-item {
+        padding: var(--spacing-lg);
+    }
+
+    .portfolio-container {
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-item {
+        margin: 0 0 var(--spacing-md) 0;
+    }
+
+    /* Contact form adjustments */
+    .contact {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .contact form {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    /* Map adjustments */
+    .map {
+        padding: var(--spacing-sm);
+        margin: var(--spacing-md) auto;
+    }
+
+    .map iframe,
+    .contact-iframe {
+        height: 200px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: var(--spacing-lg) var(--spacing-sm);
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-content {
+        gap: var(--spacing-sm);
+    }
+
+    .social-media {
+        gap: var(--spacing-sm);
+    }
+
+    .social-media a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-info p {
+        font-size: var(--font-size-xs);
+    }
+
+    .footer-info p:first-child {
+        font-size: var(--font-size-sm);
+    }
+
+    .footer-info p:last-child {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* High-resolution displays */
+@media (min-resolution: 2dppx) {
+    .logo img,
+    .social-media img {
+        image-rendering: -webkit-optimize-contrast;
+        
+    }
+}

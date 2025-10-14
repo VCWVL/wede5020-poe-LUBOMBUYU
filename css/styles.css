@@ -1,0 +1,63 @@
+/* CSS Variables for Consistent Theming */
+:root {
+    /* Color Palette */
+    --primary-color: #0057a3; /* Professional blue */
+    --primary-hover: #004a8b; /* Darker blue for hover states */
+    --accent-color: #ffb400; /* Vibrant yellow accent */
+    --accent-hover: #e09e00; /* Darker yellow for hover */
+    --secondary-color: #92bce4; /* Light blue secondary */
+    --secondary-dark: #2a4d69; /* Dark blue secondary */
+    --tertiary-color: #f8f9fa; /* Light gray for backgrounds */
+
+    /* Background Colors */
+    --bg-light: #f7fafd; /* Light background */
+    --bg-white: #ffffff; /* Pure white */
+    --bg-footer: #2a4d69; /* Footer background */
+    --bg-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+
+    /* Text Colors */
+    --text-dark: #222222; /* Main text color */
+    --text-light: #ffffff; /* Light text color */
+    --text-muted: #6c757d; /* Muted text */
+    --text-accent: #0057a3; /* Accent text */
+
+    /* Additional Colors */
+    --success-color: #27ae60; /* Success green */
+    --error-color: #e74c3c; /* Error red */
+    --primary-color-light: #7bb3d7; /* Light blue */
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-light); /* Use light text for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light); /* Headings stand out on gradient */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+}
+
+p, li, label, input, textarea, select {
+    color: var(--text-light); /* General text is light */
+}
+
+a {
+    color: var(--accent-color); /* Accent color for links */
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: var(--accent-hover); /* Darker accent on hover */
+}
+
+.nav-link {
+    color: var(--text-light); /* Navigation links are light */
+}
+
+.form-status.success {
+    color: var(--success-color);
+}
+
+.form-status.error {
+    color: var(--error-color);
+}

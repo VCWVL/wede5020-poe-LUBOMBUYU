@@ -1,0 +1,54 @@
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-light: #1a1a1a;
+        --bg-white: #2a2a2a;
+        --text-dark: #ffffff;
+        --text-muted: #cccccc;
+        --shadow-light: 0 2px 8px rgba(255, 255, 255, 0.1);
+        --shadow-medium: 0 4px 16px rgba(255, 255, 255, 0.15);
+        --shadow-heavy: 0 8px 32px rgba(255, 255, 255, 0.2);
+    }
+
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .nav-links,
+    .btn,
+    .learn-more {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: black !important;
+        page-break-after: avoid;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}

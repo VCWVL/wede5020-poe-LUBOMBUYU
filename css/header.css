@@ -1,0 +1,54 @@
+/* Header */
+.header {
+    background: var(--bg-white);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    border-bottom: 3px solid var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Remove padding in header for enquiry page */
+.enquiry-page .header {
+    padding: 0;
+}
+
+/* Remove padding in header for contact page */
+.contact-page .header {
+    padding: 0;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 10rem;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: var(--transition-fast);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.contact-info a {
+    font-weight: 600;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: opacity 0.3s ease;
+    padding: 0.25rem 0; /* Add some padding for better hover effect */
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
