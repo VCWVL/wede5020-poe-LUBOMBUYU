@@ -109,6 +109,11 @@ This project uses vanilla JavaScript for dynamic functionality. Below is a detai
 | **`js/google-form.js`** | Handles enquiry form submission to Google Forms API with validation and feedback | Included in enquiry.html |
 | **`js/maps.js`** | Embeds Google Maps iframes for displaying office locations | Included in contact.html |
 | **`js/service-enquiry.js`** | Enables service item clicks to navigate to enquiry form with pre-selected service | Included in services.html and enquiry.html |
+| **`js/accordion.js`** | Implements interactive accordions for expandable service details | Included in services.html for service item expansion |
+| **`js/contact-form.js`** | Handles contact form submission with simulated email sending and status feedback | Included in contact.html for general contact messages |
+| **`js/gallery.js`** | Provides lightbox functionality for portfolio image galleries with navigation | Included in portfolio.html for image viewing |
+| **`js/search.js`** | Enables real-time filtering of services based on search input | Included in services.html for service search functionality |
+| **`js/validation.js`** | Performs client-side form validation with error display and prevention of invalid submissions | Included in enquiry.html and contact.html for form validation |
 
 ### Notes on JavaScript Implementation
 
@@ -175,6 +180,11 @@ wede5020-part-2-LUBOMBUYU/
 │   ├── google-form.js      # Google Forms integration
 │   ├── maps.js             # Google Maps embedding
 │   ├── service-enquiry.js  # Service selection handling
+│   ├── accordion.js        # Interactive accordions
+│   ├── contact-form.js     # Contact form handling
+│   ├── gallery.js          # Gallery lightbox
+│   ├── search.js           # Service search filtering
+│   ├── validation.js       # Form validation
 │   └── middle-nav.js       # Middle navigation functionality
 │
 ├── 🖼️ Images
