@@ -46,75 +46,14 @@
         <address class="contact-info"></address>
     </header>
 
-    <!-- ================= Middle Navigation Section ================= -->
-    <nav class="middle-nav">
-        <!-- Service category navigation links -->
-        <div class="middle-nav-container">
-            <!-- Custom Software Link -->
-            <div class="middle-nav-item">
-                <a href="#custom-software" class="middle-nav-link">
-                    <i class="fas fa-code"></i>
-                    <span>Custom Software</span>
-                </a>
-            </div>
-
-            <!-- Mobile Apps Link -->
-            <div class="middle-nav-item">
-                <a href="#mobile-apps" class="middle-nav-link">
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>Mobile Apps</span>
-                </a>
-            </div>
-
-            <!-- IT Consulting Link -->
-            <div class="middle-nav-item">
-                <a href="#it-consulting" class="middle-nav-link">
-                    <i class="fas fa-users-cog"></i>
-                    <span>IT Consulting</span>
-                </a>
-            </div>
-
-            <!-- Web Development Link -->
-            <div class="middle-nav-item">
-                <a href="#web-development" class="middle-nav-link">
-                    <i class="fas fa-globe"></i>
-                    <span>Web Development</span>
-                </a>
-            </div>
-
-            <!-- Cloud Solutions Link -->
-            <div class="middle-nav-item">
-                <a href="#cloud-solutions" class="middle-nav-link">
-                    <i class="fas fa-cloud"></i>
-                    <span>Cloud Solutions</span>
-                </a>
-            </div>
-
-            <!-- Cybersecurity Link -->
-            <div class="middle-nav-item">
-                <a href="#cybersecurity" class="middle-nav-link">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Cybersecurity</span>
-                </a>
-            </div>
-
-            <!-- Data Analytics Link -->
-            <div class="middle-nav-item">
-                <a href="#data-analytics" class="middle-nav-link">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Data Analytics</span>
-                </a>
-            </div>
-
-            <!-- UI/UX Design Link -->
-            <div class="middle-nav-item">
-                <a href="#ui-ux-design" class="middle-nav-link">
-                    <i class="fas fa-palette"></i>
-                    <span>UI/UX Design</span>
-                </a>
-            </div>
+    <!-- ================= Search Section ================= -->
+    <section class="search-section">
+        <h2>Find the Perfect Service for Your Business</h2>
+        <div class="search-container">
+            <input type="text" id="serviceSearch" placeholder="Search services..." aria-label="Search services">
+            <button type="button" id="clearSearch" aria-label="Clear search">Clear</button>
         </div>
-    </nav>
+    </section>
 
     <!-- Services Section -->
     <main class="services">
@@ -394,11 +333,82 @@
         </section>
     </main>
 
+    <!-- ================= Middle Navigation Section ================= -->
+    <nav class="middle-nav">
+        <!-- Service category navigation links -->
+        <div class="middle-nav-container">
+            <!-- Custom Software Link -->
+            <div class="middle-nav-item">
+                <a href="#custom-software" class="middle-nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Custom Software</span>
+                </a>
+            </div>
+
+            <!-- Mobile Apps Link -->
+            <div class="middle-nav-item">
+                <a href="#mobile-apps" class="middle-nav-link">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile Apps</span>
+                </a>
+            </div>
+
+            <!-- IT Consulting Link -->
+            <div class="middle-nav-item">
+                <a href="#it-consulting" class="middle-nav-link">
+                    <i class="fas fa-users-cog"></i>
+                    <span>IT Consulting</span>
+                </a>
+            </div>
+
+            <!-- Web Development Link -->
+            <div class="middle-nav-item">
+                <a href="#web-development" class="middle-nav-link">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Development</span>
+                </a>
+            </div>
+
+            <!-- Cloud Solutions Link -->
+            <div class="middle-nav-item">
+                <a href="#cloud-solutions" class="middle-nav-link">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloud Solutions</span>
+                </a>
+            </div>
+
+            <!-- Cybersecurity Link -->
+            <div class="middle-nav-item">
+                <a href="#cybersecurity" class="middle-nav-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Cybersecurity</span>
+                </a>
+            </div>
+
+            <!-- Data Analytics Link -->
+            <div class="middle-nav-item">
+                <a href="#data-analytics" class="middle-nav-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Data Analytics</span>
+                </a>
+            </div>
+
+            <!-- UI/UX Design Link -->
+            <div class="middle-nav-item">
+                <a href="#ui-ux-design" class="middle-nav-link">
+                    <i class="fas fa-palette"></i>
+                    <span>UI/UX Design</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <!-- ================= Footer Section ================= -->
     <footer class="footer"></footer>
 
     <!-- ================= JavaScript Files ================= -->
     <!-- Scripts are loaded at the end of the body for better performance -->
+    <script src="js/search.js"></script>    <!-- Search functionality -->
     <script src="js/address.js"></script>   <!-- Address functionality -->
     <script src="js/footer.js"></script>    <!-- Footer functionality -->
     <script src="js/top.js"></script>       <!-- Scroll to top functionality -->

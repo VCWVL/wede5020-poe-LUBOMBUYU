@@ -3,16 +3,6 @@
  *
  * Function: Enables clicking on service items to navigate to enquiry form with pre-selected service, and handles form submission.
  * Usage: Included in services.html and enquiry.html for service selection and form handling.
- *
- * References:
- * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
- * - querySelectorAll: MDN. (n.d.) *Document.querySelectorAll()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll (Accessed: 2023).
- * - addEventListener: MDN. (n.d.) *EventTarget.addEventListener()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener (Accessed: 2023).
- * - URLSearchParams: MDN. (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
- * - FormData: MDN. (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
- * - Fetch API: MDN. (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
- * - Google Forms integration: Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
- * - encodeURIComponent: MDN. (n.d.) *encodeURIComponent()*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent (Accessed: 2023).
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -85,3 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/*
+ * References:
+ * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ * - querySelectorAll: MDN. (n.d.) *Document.querySelectorAll()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll (Accessed: 2023).
+ * - addEventListener: MDN. (n.d.) *EventTarget.addEventListener()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener (Accessed: 2023).
+ * - URLSearchParams: MDN. (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
+ * - FormData: MDN. (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
+ * - Fetch API: MDN. (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
+ * - Google Forms integration: Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
+ * - encodeURIComponent: MDN. (n.d.) *encodeURIComponent()*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent (Accessed: 2023).
+ */

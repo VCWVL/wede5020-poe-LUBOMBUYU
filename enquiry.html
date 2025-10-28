@@ -18,6 +18,7 @@
         <script src="js/footer.js"></script> <!-- Footer scripts -->
         <script src="js/top.js"></script>   <!-- Top button scripts -->
         <script src="js/address.js"></script> <!-- Address scripts -->
+        <script src="js/validation.js"></script> <!-- Form validation scripts -->
     </head>
 <body class="enquiry-page">
     <!-- ================= Header Section ================= -->
@@ -57,43 +58,38 @@
         <form id="enquiryForm" class="google-form" autocomplete="off" aria-label="Enquiry form">
             <div class="form-group">
                 <label for="name">Full Name<span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="YOUR_NAME_ENTRY_ID" required placeholder="Your full name">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address<span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="YOUR_EMAIL_ENTRY_ID" required placeholder="you@email.com">
+                <input type="text" id="name" name="entry.403946190" required placeholder="Your full name">
             </div>
             
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="YOUR_PHONE_ENTRY_ID" placeholder="Optional">
+                <input type="tel" id="phone" name="entry.1867234397" placeholder="Optional">
             </div>
-            
+
             <div class="form-group">
                 <label for="company">Company/Organization</label>
-                <input type="text" id="company" name="YOUR_COMPANY_ENTRY_ID" placeholder="Your company name">
+                <input type="text" id="company" name="entry.441625750" placeholder="Your company name">
             </div>
-            
+
             <div class="form-group">
                 <label for="service">Service Interested In<span aria-hidden="true">*</span></label>
-                <select id="service" name="YOUR_SERVICE_ENTRY_ID" required>
+                <select id="service" name="entry.1743085748" required>
                     <option value="">Select a service</option>
                     <option value="Custom Software Development">Custom Software Development</option>
-                    <option value="Mobile App Solutions">Mobile App Solutions</option>
+                    <option value="Mobile App Scripting">Mobile App Scripting</option>
                     <option value="IT Consulting">IT Consulting</option>
                     <option value="Web Development">Web Development</option>
                     <option value="Cloud Solutions">Cloud Solutions</option>
                     <option value="Cybersecurity">Cybersecurity</option>
-                    <option value="Data Analytics & Business Intelligence">Data Analytics & Business Intelligence</option>
-                    <option value="UI/UX Design Services">UI/UX Design Services</option>
+                    <option value="Data Analytics and Business Intelligence">Data Analytics and Business Intelligence</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
                 <label for="budget">Budget Range</label>
-                <select id="budget" name="YOUR_BUDGET_ENTRY_ID">
+                <select id="budget" name="entry.754967865">
                     <option value="">Select budget range</option>
                     <option value="Under R10,000">Under R10,000</option>
                     <option value="R10,000 - R50,000">R10,000 - R50,000</option>
@@ -102,10 +98,10 @@
                     <option value="Over R500,000">Over R500,000</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
                 <label for="timeline">Project Timeline</label>
-                <select id="timeline" name="YOUR_TIMELINE_ENTRY_ID">
+                <select id="timeline" name="entry.2065323462">
                     <option value="">Select timeline</option>
                     <option value="ASAP">ASAP</option>
                     <option value="1-2 months">1-2 months</option>
@@ -114,25 +110,24 @@
                     <option value="Over 1 year">Over 1 year</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
                 <label for="message">Project Details<span aria-hidden="true">*</span></label>
-                <textarea id="message" name="YOUR_MESSAGE_ENTRY_ID" rows="5" required placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
+                <textarea id="message" name="entry.897348607" rows="5" required placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
             </div>
-            
+
             <div class="form-group">
                 <label for="referral">How did you hear about us?</label>
-                <select id="referral" name="YOUR_REFERRAL_ENTRY_ID">
+                <select id="referral" name="entry.1779001800">
                     <option value="">Select an option</option>
                     <option value="Google Search">Google Search</option>
                     <option value="Social Media">Social Media</option>
-                    <option value="Friend/Colleague">Friend/Colleague</option>
-                    <option value="Event/Conference">Event/Conference</option>
+                    <option value="Friend/Collegue">Friend/Collegue</option>
+                    <option value="Event/Confrence">Event/Confrence</option>
                     <option value="Advertisement">Advertisement</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
-            
             <div class="form-submit-area">
                 <button type="submit" class="btn-primary">Submit Enquiry</button>
                 <div id="formStatus" class="form-status hidden"></div>

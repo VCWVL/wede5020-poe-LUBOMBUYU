@@ -3,14 +3,6 @@
  *
  * Function: Pre-selects service from URL parameters, validates form, and submits data to Google Forms API.
  * Usage: Included in enquiry.html for form handling and submission.
- *
- * References:
- * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
- * - URLSearchParams: MDN. (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
- * - FormData: MDN. (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
- * - Fetch API: MDN. (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
- * - Google Forms integration: Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
- * - Form validation patterns: W3Schools. (n.d.) *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 2023).
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -41,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. Replace 'YOUR_UNIQUE_FORM_ID' and 'YOUR_..._ENTRY_ID' in your enquiry.html file first.
     //    This script will then pick them up.
 
-    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_UNIQUE_FORM_ID/formResponse';
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1au1Rs4xcP3vJRaS02MxIJzceZw58b4QqJ7fGDGUlyCw/formResponse';
 
     enquiryForm.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -83,3 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/*
+ * References:
+ * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ * - URLSearchParams: MDN. (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
+ * - FormData: MDN. (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
+ * - Fetch API: MDN. (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
+ * - Google Forms integration: Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
+ * - Form validation patterns: W3Schools. (n.d.) *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 2023).
+ */

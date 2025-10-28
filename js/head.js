@@ -3,11 +3,6 @@
  *
  * Function: This script checks for essential head elements and inserts them if missing, promoting DRY (Don't Repeat Yourself) principles.
  * Usage: Include <script src="js/head.js"></script> as the first script in your HTML file.
- *
- * References:
- * - DOM manipulation: Mozilla Developer Network (MDN). (n.d.) *Document.querySelector()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector (Accessed: 2023).
- * - insertAdjacentHTML: MDN. (n.d.) *Element.insertAdjacentHTML()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML (Accessed: 2023).
- * - DOMContentLoaded event: MDN. (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -29,3 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (metaDescription) head.insertAdjacentHTML('beforeend', metaDescription);
     if (!head.querySelector('link[rel="stylesheet"][href="css/styles.css"]')) head.insertAdjacentHTML('beforeend', stylesheet);
 });
+
+/*
+ * References:
+ * - DOM manipulation: Mozilla Developer Network (MDN). (n.d.) *Document.querySelector()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector (Accessed: 2023).
+ * - insertAdjacentHTML: MDN. (n.d.) *Element.insertAdjacentHTML()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML (Accessed: 2023).
+ * - DOMContentLoaded event: MDN. (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ */

@@ -1,48 +1,105 @@
 /**
- * Dynamically embeds Google Maps iframes for location display.
+ * Interactive Maps functionality using Leaflet for location display.
  *
- * Function: Replaces map section content with embedded Google Maps showing company locations.
- * Usage: Included in contact.html for displaying office locations.
- *
- * References:
- * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
- * - querySelector: MDN. (n.d.) *Document.querySelector()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector (Accessed: 2023).
- * - innerHTML: MDN. (n.d.) *Element.innerHTML*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML (Accessed: 2023).
- * - Google Maps Embed API: Google. (n.d.) *Google Maps Embed API*. Available at: https://developers.google.com/maps/documentation/embed (Accessed: 2023).
- * - Template literals: MDN. (n.d.) *Template literals (Template strings)*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals (Accessed: 2023).
+ * Function: Embeds Leaflet map with markers, popups, and tab-based navigation for office locations.
+ * Usage: Included in contact.html for displaying office locations interactively.
  */
 
-// Note: This file contains duplicate event listeners for different map sections.
-// In a production environment, this should be refactored to handle multiple maps dynamically.
-
 document.addEventListener('DOMContentLoaded', function () {
-    const mapSection = document.querySelector('.map');
-    if (mapSection) {
-        mapSection.innerHTML = `
-            <h2>Find Us Here</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1253505835507!2d30.895508876222554!3d-30.033261474929237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7ad54608d6929%3A0x1cb46da3c87914b9!2sGalleria%20Mall!5e0!3m2!1sen!2sza!4v1754991007177!5m2!1sen!2sza"
-                class="contact-iframe"
-                title="Our location on Google Maps"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        `;
-    }
-});
+    const mapContainer = document.querySelector('.map-container');
+    if (!mapContainer) return;
 
-document.addEventListener('DOMContentLoaded', function () {
-    const mapSection = document.querySelector('.map');
-    if (mapSection) {
-        mapSection.innerHTML = `
-            <h2>Find Us Here As Well</h2>
-            <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57290.326566559546!2d28.026119213783364!3d-26.17567524355181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg%2C%20Zuid-Afrika!5e0!3m2!1snl!2snl!4v1755696518441!5m2!1snl!2snl"
-                class="contact-iframe"
-                title="Our location on Google Maps"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
+    const locations = [
+        {
+            id: 'galleria',
+            name: 'Galleria Mall',
+            address: '123 Main Street, Galleria Mall<br>Durban, South Africa',
+            phone: '+27 12 345 6799',
+            hours: 'Mon-Fri 8AM-5PM',
+            lat: -30.033261474929237,
+            lng: 30.895508876222554,
+            directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Galleria+Mall+Durban'
+        },
+        {
+            id: 'rosebank',
+            name: 'Rosebank Mall',
+            address: '456 Commerce Road, Rosebank Mall<br>Johannesburg, South Africa',
+            phone: '+27 12 345 6799',
+            hours: 'Mon-Fri 8AM-5PM',
+            lat: -26.15773528735435,
+            lng: 28.0209666964707,
+            directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Rosebank+Mall+Johannesburg'
+        }
+    ];
+
+    // Create tab container
+    const tabContainer = document.createElement('div');
+    tabContainer.className = 'location-tabs';
+    mapContainer.appendChild(tabContainer);
+
+    // Create map container
+    const mapDiv = document.createElement('div');
+    mapDiv.id = 'map';
+    mapDiv.style.height = '400px';
+    mapDiv.style.width = '100%';
+    mapContainer.appendChild(mapDiv);
+
+    // Initialize map centered on South Africa
+    const map = L.map('map').setView([-28.0955, 29.4585], 6);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Create markers and popups
+    const markers = {};
+    locations.forEach((loc, index) => {
+        const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+        const popupContent = `
+            <div class="map-popup">
+                <h3>${loc.name} Office</h3>
+                <p>${loc.address}</p>
+                <p><strong>Phone:</strong> ${loc.phone}</p>
+                <p><strong>Hours:</strong> ${loc.hours}</p>
+                <button class="map-directions-btn" onclick="window.open('${loc.directionsUrl}', '_blank')">Get Directions</button>
+            </div>
         `;
+        marker.bindPopup(popupContent);
+        markers[loc.id] = marker;
+
+        // Create tab button
+        const tabButton = document.createElement('button');
+        tabButton.className = `location-tab ${index === 0 ? 'active' : ''}`;
+        tabButton.setAttribute('data-location', loc.id);
+        tabButton.textContent = loc.name;
+        tabContainer.appendChild(tabButton);
+    });
+
+    // Tab click handler
+    tabContainer.addEventListener('click', function(e) {
+        if (e.target.classList.contains('location-tab')) {
+            const targetLocation = e.target.getAttribute('data-location');
+
+            // Update tab active state
+            tabContainer.querySelectorAll('.location-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            e.target.classList.add('active');
+
+            // Center map on selected location and open popup
+            const marker = markers[targetLocation];
+            if (marker) {
+                map.setView(marker.getLatLng(), 15);
+                marker.openPopup();
+            }
+        }
+    });
+
+    // Default to first location
+    if (locations.length > 0) {
+        const firstLoc = locations[0];
+        map.setView([firstLoc.lat, firstLoc.lng], 15);
+        markers[firstLoc.id].openPopup();
     }
 });

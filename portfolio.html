@@ -53,6 +53,63 @@
         <h1>Our Work</h1>
         <p>Here’s a look at some of the digital solutions we’ve crafted for clients across different industries.</p>
 
+        <!-- ================= Gallery Section ================= -->
+        <section class="gallery-section">
+            <h2>Project Gallery</h2>
+            <p>Click on any image to view it in full size</p>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=225&fit=crop" alt="Custom Software Development Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Custom Software Development</h3>
+                        <p>Inventory Management System</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=225&fit=crop" alt="Mobile App Development Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Mobile App Solutions</h3>
+                        <p>Fitness Tracker App</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=225&fit=crop" alt="Web Development Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Web Development</h3>
+                        <p>E-commerce Platform</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=225&fit=crop" alt="Cybersecurity Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Cybersecurity</h3>
+                        <p>Security Assessment Dashboard</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=225&fit=crop" alt="Cloud Solutions Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Cloud Solutions</h3>
+                        <p>Cloud Migration Platform</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=225&fit=crop" alt="UI/UX Design Project Screenshot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>UI/UX Design</h3>
+                        <p>Educational App Redesign</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+
         <div class="portfolio-container">
             <!-- Project 1 -->
             <article class="portfolio-item">
@@ -150,6 +207,7 @@
     <footer class="footer"></footer>
 
     <!-- Scripts are loaded at the end of the body for better performance -->
+    <script src="js/gallery.js"></script> <!-- Gallery Lightbox Script -->
     <script src="js/address.js"></script> <!-- Address Script -->
     <script src="js/footer.js"></script> <!-- Footer Script -->
     <script src="js/top.js"></script> <!-- Scroll to Top Script -->

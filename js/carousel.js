@@ -3,14 +3,6 @@
  *
  * Function: Creates a responsive carousel with navigation, indicators, keyboard/touch support, and smooth animations.
  * Usage: Initializes on the homepage (index.html) for the services section carousel.
- *
- * References:
- * - Class syntax: Mozilla Developer Network (MDN). (n.d.) *Classes*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes (Accessed: 2023).
- * - DOMContentLoaded event: MDN. (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
- * - Touch events: MDN. (n.d.) *Touch events*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events (Accessed: 2023).
- * - CSS transforms: MDN. (n.d.) *transform*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/transform (Accessed: 2023).
- * - Keyboard events: MDN. (n.d.) *KeyboardEvent*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent (Accessed: 2023).
- * - Carousel implementation inspired by: W3Schools. (n.d.) *How TO - Slideshow*. Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp (Accessed: 2023).
  */
 
 class ServiceCarousel {
@@ -231,3 +223,13 @@ class ServiceCarousel {
 document.addEventListener('DOMContentLoaded', function() {
     new ServiceCarousel('services-carousel');
 });
+
+/*
+ * References:
+ * - Class syntax: Mozilla Developer Network (MDN). (n.d.) *Classes*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes (Accessed: 2023).
+ * - DOMContentLoaded event: MDN. (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ * - Touch events: MDN. (n.d.) *Touch events*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events (Accessed: 2023).
+ * - CSS transforms: MDN. (n.d.) *transform*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/transform (Accessed: 2023).
+ * - Keyboard events: MDN. (n.d.) *KeyboardEvent*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent (Accessed: 2023).
+ * - Carousel implementation inspired by: W3Schools. (n.d.) *How TO - Slideshow*. Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp (Accessed: 2023).
+ */

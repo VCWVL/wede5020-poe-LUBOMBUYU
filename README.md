@@ -229,12 +229,16 @@ flowchart TD
 ### v3.0.0 – Part 3: Functionality & SEO Implementation (2025-11-03) ✅
 - 🔍 **Comprehensive SEO Implementation**: Title tags, meta descriptions, meta keywords for all pages
 - 🤖 **Robots.txt & Sitemap**: Search engine crawling instructions and XML sitemap with production URLs
-- ⚡ **Enhanced JavaScript Functionality**: Interactive carousel, navigation highlighting, Google Forms integration
-- 🗺️ **Google Maps Integration**: Embedded maps for office locations
+- ⚡ **Enhanced JavaScript Functionality**: Interactive carousel, navigation highlighting, Google Forms integration, accordions, gallery lightbox, search filtering
+- 🗺️ **Interactive Maps**: Leaflet-based maps for office locations with markers
 - 📝 **Form Validation**: Client-side validation with real-time feedback and AJAX submission
 - 🎯 **Service Selection**: Pre-populated enquiry forms from service pages
+- 🔍 **Search Functionality**: Real-time filtering of services on services page
+- 🖼️ **Gallery Lightbox**: Click-to-enlarge images in portfolio with modal overlay
 - 📱 **Touch & Keyboard Navigation**: Full accessibility support for interactive elements
 - 🚀 **Performance Optimization**: Optimized script loading and error handling
+- 🎛️ **Interactive Accordions**: Expandable service details with smooth animations
+- 📱 **Responsive Middle Navigation**: Service quick-links available on mobile/tablet devices only
 
 ### v2.0.0 – Part 2: Designing the Visuals (2025-09-29) ✅
 - 🎨 CSS variables system (colors, typography, spacing, shadows)
@@ -261,10 +265,15 @@ flowchart TD
 - Mozilla Developer Network (MDN). (n.d.) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2023).
 - Mozilla Developer Network (MDN). (n.d.) *FormData*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/FormData (Accessed: 2023).
 - Mozilla Developer Network (MDN). (n.d.) *URLSearchParams*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams (Accessed: 2023).
+- Mozilla Developer Network (MDN). (n.d.) *Element.classList*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList (Accessed: 2023).
+- Mozilla Developer Network (MDN). (n.d.) *EventTarget.addEventListener()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener (Accessed: 2023).
 - Google. (n.d.) *Google Forms API*. Available at: https://developers.google.com/forms/api (Accessed: 2023).
 - Google. (n.d.) *Google Maps Embed API*. Available at: https://developers.google.com/maps/documentation/embed (Accessed: 2023).
 - Font Awesome. (n.d.) *Font Awesome Icons*. Available at: https://fontawesome.com/icons (Accessed: 2023).
 - W3Schools. (n.d.) *JavaScript Slideshow*. Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp (Accessed: 2023).
+- W3Schools. (n.d.) *How To Create a Lightbox*. Available at: https://www.w3schools.com/howto/howto_js_lightbox.asp (Accessed: 2023).
+- W3Schools. (n.d.) *How To Create an Accordion*. Available at: https://www.w3schools.com/howto/howto_js_accordion.asp (Accessed: 2023).
+- Leaflet. (n.d.) *Leaflet - a JavaScript library for interactive maps*. Available at: https://leafletjs.com/ (Accessed: 2023).
 
 ### General References
 - Google Fonts. (n.d.) *Google Fonts*. Available at: https://fonts.google.com/ (Accessed: 2023).

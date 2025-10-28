@@ -3,13 +3,6 @@
  *
  * Function: Inserts consistent footer HTML into the footer element across all pages.
  * Usage: Included in all pages (index.html, about.html, services.html, contact.html, enquiry.html, portfolio.html).
- *
- * References:
- * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
- * - querySelector: MDN. (n.d.) *Document.querySelector()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector (Accessed: 2023).
- * - innerHTML: MDN. (n.d.) *Element.innerHTML*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML (Accessed: 2023).
- * - Template literals: MDN. (n.d.) *Template literals (Template strings)*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals (Accessed: 2023).
- * - Font Awesome icons: Font Awesome. (n.d.) *Font Awesome Icons*. Available at: https://fontawesome.com/icons (Accessed: 2023).
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -43,3 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Footer element not found');
     }
 });
+
+/*
+ * References:
+ * - DOMContentLoaded event: Mozilla Developer Network (MDN). (n.d.) *Document: DOMContentLoaded event*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event (Accessed: 2023).
+ * - querySelector: MDN. (n.d.) *Document.querySelector()*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector (Accessed: 2023).
+ * - innerHTML: MDN. (n.d.) *Element.innerHTML*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML (Accessed: 2023).
+ * - Template literals: MDN. (n.d.) *Template literals (Template strings)*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals (Accessed: 2023).
+ * - Font Awesome icons: Font Awesome. (n.d.) *Font Awesome Icons*. Available at: https://fontawesome.com/icons (Accessed: 2023).
+ */
