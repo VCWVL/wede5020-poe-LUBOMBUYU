@@ -79,3 +79,9 @@ This document provides a comprehensive overview of the website's design and resp
 ### Enquiry Page
 <img src="images/responsive/Tablet enquiry.jpeg" alt="Tablet Enquiry Page Screenshot" style="max-width: 100%; height: auto;">
 *Figure 18: Tablet enquiry page with form optimized for tablets.*
+
+## Functionality Screenshots
+
+### Google Form Submission Response
+<img src="images/reposone from google form.jpeg" alt="Google Form Submission Response Screenshot" style="max-width: 100%; height: auto;">
+*Figure 19: Screenshot demonstrating successful enquiry form submission to Google Forms, showing the response confirmation.*

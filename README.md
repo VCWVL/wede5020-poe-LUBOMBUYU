@@ -72,7 +72,7 @@ This project demonstrates front-end development skills, showcasing a **responsiv
 
 ## 📸 Website Screenshots
 
-For detailed screenshots of the website showcasing its design and responsiveness, please refer to the [website-screenshots.md](website-screenshots.md) file.
+For detailed screenshots of the website showcasing its design, responsiveness, and functionality (including Google Form submission responses), please refer to the [website-screenshots.md](docs/website-screenshots.md) file.
 
 ## 🗓️ Timeline & Milestones
 
@@ -249,6 +249,7 @@ flowchart TD
 - 🚀 **Performance Optimization**: Optimized script loading and error handling
 - 🎛️ **Interactive Accordions**: Expandable service details with smooth animations
 - 📱 **Responsive Middle Navigation**: Service quick-links available on mobile/tablet devices only
+- 📸 **Functionality Screenshots**: Added screenshot of Google Form submission response for documentation
 
 ### v2.0.0 – Part 2: Designing the Visuals (2025-09-29) ✅
 - 🎨 CSS variables system (colors, typography, spacing, shadows)
