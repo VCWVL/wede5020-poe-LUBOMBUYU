@@ -295,6 +295,10 @@ flowchart TD
 ### Content Sourcing
 - **Public Domain / Creative Commons**: Images, icons, and fonts.
 - **Original Content**: Company overview, services, and portfolio text.
+- **Team Member Images (About Page)**:
+  - Jane Doe (CEO): Photo by Christian Buehner on Unsplash. Available at: https://unsplash.com/photos/1507003211169-0a1dd7228f2d (Accessed: 2025).
+  - John Smith (CTO): Photo by Ben Parker on Unsplash. Available at: https://unsplash.com/photos/1472099645785-5658abf4ff4e (Accessed: 2025).
+  - Priya Patel (Lead Consultant): Photo by LinkedIn Sales Solutions on Unsplash. Available at: https://unsplash.com/photos/1573496359142-b8d87734a5a2 (Accessed: 2025).
 
 ---
 
