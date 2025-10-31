@@ -9,17 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const footerHTML = `
     <div class="footer-content">
     <div class="social-media">
-        <a href="https://www.facebook.com/TechFlowSolutions" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/TechFlowSol" target="_blank" rel="noopener" aria-label="Follow us on Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/techflow-solutions" target="_blank" rel="noopener" aria-label="Connect with us on LinkedIn">
+        <a href="https://linkedin.com/company/techflow-solutions" target="_blank" rel="noopener" aria-label="Connect with us on LinkedIn">
             <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://www.instagram.com/techflow_solutions" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
-            <i class="fab fa-instagram"></i>
+        <a href="https://twitter.com/techflow_sa" target="_blank" rel="noopener" aria-label="Follow us on Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com/techflow.solutions" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f"></i>
         </a>
     </div>
         <div class="footer-info">

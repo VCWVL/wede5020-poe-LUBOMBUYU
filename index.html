@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <!-- SEO: UTF-8 encoding for proper character display -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Responsive viewport meta tag for mobile-friendliness -->
     <title>TechFlow Solutions - Custom Software Development & IT Consulting</title>
-    <meta name="description"
-        content="TechFlow Solutions provides expert custom software development, mobile apps, and IT consulting services. Transform your business with cutting-edge technology solutions.">
+    <!-- SEO: Optimized title tag with primary keywords: custom software development, IT consulting -->
+    <meta name="description" content="TechFlow Solutions provides expert custom software development, mobile apps, and IT consulting services. Transform your business with cutting-edge technology solutions.">
+    <!-- SEO: Compelling meta description with location and services keywords -->
     <meta name="keywords" content="custom software development, mobile app development, IT consulting, web development, cloud solutions, cybersecurity, software company, Durban, South Africa">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/special.css">
-    <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/carousel.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/head.js"></script>
+    <!-- SEO: Relevant keywords including location for local SEO -->
+    <!-- CSS Stylesheets for styling and layout -->
+    <link rel="stylesheet" href="css/styles.css">      <!-- Global styles and CSS variables -->
+    <link rel="stylesheet" href="css/header.css">     <!-- Header and navigation styles -->
+    <link rel="stylesheet" href="css/footer.css">     <!-- Footer styles -->
+    <link rel="stylesheet" href="css/utilities.css">  <!-- Utility classes -->
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive design styles -->
+    <link rel="stylesheet" href="css/special.css">    <!-- Special effects and animations -->
+    <link rel="stylesheet" href="css/services.css">   <!-- Services section styles -->
+    <link rel="stylesheet" href="css/index.css">      <!-- Homepage specific styles -->
+    <link rel="stylesheet" href="css/carousel.css">   <!-- Carousel component styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome icons -->
+    <script src="js/head.js"></script> <!-- Dynamic head generation script -->
+    <!-- SEO: Schema markup for local business structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TechFlow Solutions",
+      "url": "https://techflow.co.za",
+      "logo": "https://techflow.co.za/images/logo.jpeg",
+      "description": "Leading IT services company specializing in custom software development, mobile apps, and IT consulting in Durban, South Africa.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Galleria Mall & Rosebank Mall",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27-12-345-6799",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/techflow-solutions",
+        "https://twitter.com/techflow_sa",
+        "https://facebook.com/techflow.solutions"
+      ]
+    }
+    </script>
 </head>
-
 <body>
     <!-- ================= Header Section ================= -->
+    <!-- Site header with logo, navigation, and contact info -->
     <header class="header">
         <!-- Logo Section -->
         <div class="logo">
             <a href="index.html">
-                <!-- Company logo with responsive images -->
+                <!-- Company logo with responsive images for different screen sizes -->
                 <img src="images/logo.jpeg" alt="TechFlow Solutions Logo"
                      srcset="images/logo.jpeg 1x, images/logo.jpeg 2x"
                      sizes="(max-width: 768px) 150px, 200px"
@@ -48,25 +81,23 @@
             </ul>
         </nav>
 
-        <!-- Contact Information -->
+        <!-- Contact Information - dynamically loaded -->
         <address class="contact-info"></address>
     </header>
 
-
-
-
-
     <!-- ================= Hero Banner Section ================= -->
+    <!-- Main hero section with compelling headline and CTA -->
     <section class="hero-banner">
         <!-- Hero content with call-to-action -->
         <div class="hero-content">
             <h1>Empowering Your Digital Future</h1>
             <p>Custom Software • Mobile Apps • IT Consulting</p>
-            <a href="contact.html" class="cta-btn">Let’s Build Your Solution</a>
+            <a href="contact.html" class="cta-btn">Let's Build Your Solution</a>
         </div>
     </section>
 
     <!-- ================= Services Section ================= -->
+    <!-- Services overview section with carousel display -->
     <section class="services">
         <!-- Services introduction -->
         <h2>Our Core Services</h2>
@@ -163,14 +194,14 @@
         </div>
     </section>
     <!-- ================= Footer Section ================= -->
+    <!-- Site footer with social media links and company info - dynamically loaded -->
     <footer class="footer"></footer>
 
     <!-- ================= JavaScript Files ================= -->
-    <!-- Scripts are loaded at the end of the body for better performance -->
-    <script src="js/address.js"></script>    <!-- Address functionality -->
-    <script src="js/footer.js"></script>     <!-- Footer functionality -->
-    <script src="js/top.js"></script>        <!-- Scroll to top functionality -->
-    <script src="js/carousel.js"></script>   <!-- Services carousel functionality -->
+    <!-- Scripts loaded at end of body for optimal performance -->
+    <script src="js/address.js"></script>    <!-- Dynamic address loading -->
+    <script src="js/footer.js"></script>     <!-- Dynamic footer generation -->
+    <script src="js/top.js"></script>        <!-- Scroll-to-top button functionality -->
+    <script src="js/carousel.js"></script>   <!-- Interactive services carousel -->
 </body>
-
 </html>

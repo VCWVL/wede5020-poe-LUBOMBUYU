@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- ================= Head Section ================= -->
+    <!-- Document head with SEO optimization and resource loading -->
 
     <head>
     <meta charset="UTF-8">
+    <!-- SEO: UTF-8 encoding for proper character display -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Responsive viewport meta tag for mobile-friendliness -->
     <title>Contact TechFlow Solutions - Get In Touch Today</title>
+    <!-- SEO: Optimized title tag with primary keywords: contact, get in touch -->
     <meta name="description" content="Contact TechFlow Solutions for custom software development, mobile apps, and IT consulting. Visit our offices in Galleria Mall and Rosebank Mall, Durban.">
+    <!-- SEO: Compelling meta description with services and location -->
     <meta name="keywords" content="contact TechFlow Solutions, IT company contact, software development contact, Durban office locations, Galleria Mall, Rosebank Mall, IT consulting contact">
-        <link rel="stylesheet" href="css/styles.css">      <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/header.css"> <!-- Header Stylesheet -->
-        <link rel="stylesheet" href="css/footer.css"> <!-- Footer Stylesheet -->
-        <link rel="stylesheet" href="css/utilities.css"> <!-- Utilities Stylesheet -->
-        <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive Stylesheet -->
-        <link rel="stylesheet" href="css/special.css"> <!-- Special Stylesheet -->
-        <link rel="stylesheet" href="css/contact.css">   <!-- Contact Page Stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!-- Leaflet CSS -->
+    <!-- SEO: Relevant keywords including location and contact info -->
+        <!-- CSS Stylesheets for styling and layout -->
+        <link rel="stylesheet" href="css/styles.css">      <!-- Global styles and CSS variables -->
+        <link rel="stylesheet" href="css/header.css">     <!-- Header and navigation styles -->
+        <link rel="stylesheet" href="css/footer.css">     <!-- Footer styles -->
+        <link rel="stylesheet" href="css/utilities.css">  <!-- Utility classes -->
+        <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive design styles -->
+        <link rel="stylesheet" href="css/special.css">    <!-- Special effects and animations -->
+        <link rel="stylesheet" href="css/contact.css">    <!-- Contact page specific styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome icons -->
+        <!-- Leaflet CSS for interactive maps -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
               integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
               crossorigin=""/>
-        <script src="js/head.js"></script>  <!-- Head Script for common functionalities -->
-        <script src="js/navigation.js"></script>    <!-- Navigation Script -->
-        <script src="js/address.js"></script>       <!-- Address Script -->
-        <script src="js/footer.js"></script>    <!-- Footer Script -->
-        <script src="js/top.js"></script>   <!-- Scroll to Top Script -->
-        <script src="js/validation.js"></script> <!-- Form validation scripts -->
-        <script src="js/contact-form.js"></script> <!-- Contact form submission scripts -->
-        <!-- Leaflet JS -->
+        <script src="js/head.js"></script>  <!-- Dynamic head generation script -->
+        <script src="js/navigation.js"></script>    <!-- Navigation highlighting script -->
+        <script src="js/address.js"></script>       <!-- Dynamic address loading -->
+        <script src="js/footer.js"></script>    <!-- Dynamic footer generation -->
+        <script src="js/top.js"></script>   <!-- Scroll-to-top button functionality -->
+        <script src="js/validation.js"></script> <!-- Client-side form validation -->
+        <script src="js/contact-form.js"></script> <!-- Contact form submission handling -->
+        <!-- Leaflet JS for interactive maps -->
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
                 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
                 crossorigin=""></script>
-        <script src="js/maps.js"></script> <!-- Interactive maps script -->
+        <script src="js/maps.js"></script> <!-- Interactive maps initialization -->
     </head>
 
 <body class="contact-page">
     <!-- ================= Header Section ================= -->
+    <!-- Site header with logo, navigation, and contact info -->
     <header class="header">
         <!-- Logo Section -->
         <div class="logo">
             <a href="index.html">
-                <!-- Company logo with responsive images -->
+                <!-- Company logo with responsive images for different screen sizes -->
                 <img src="images/logo.jpeg" alt="TechFlow Solutions Logo"
                      srcset="images/logo.jpeg 1x, images/logo.jpeg 2x"
                      sizes="(max-width: 768px) 150px, 200px"
@@ -59,11 +68,12 @@
             </ul>
         </nav>
 
-        <!-- Contact Information -->
+        <!-- Contact Information - dynamically loaded -->
         <address class="contact-info"></address>
     </header>
 
     <!-- ================= Contact Section ================= -->
+    <!-- Contact information and call-to-action section -->
     <section class="contact" id="contact">
         <div class="contact-header">
             <h1>Get In Touch</h1>
@@ -100,7 +110,7 @@
                         </div>
                         <div class="contact-text">
                             <strong>Locations:</strong>
-                            <span>Galleria Mall & Rosebank Mall</span>
+                            <span>Galleria Mall & Rosebank Mall, Durban, South Africa</span>
                         </div>
                     </div>
 
@@ -126,11 +136,13 @@
         </div>
 
     <!-- ================= Map Section ================= -->
+    <!-- Interactive map showing office locations -->
     <div class="map-container">
         <!-- Interactive map will be inserted here by js/maps.js -->
     </div>
 
     <!-- ================= Contact Form Section ================= -->
+    <!-- General contact form with validation and AJAX submission -->
     <section class="contact-form-section">
         <h2>Send Us a Message</h2>
         <p>Have a general question or want to get in touch? Fill out the form below.</p>
@@ -175,9 +187,8 @@
         </form>
     </section>
 
-    </section>
-
 </body>
 <!-- ================= Footer Section ================= -->
+<!-- Site footer with social media links and company info - dynamically loaded -->
 <footer class="footer"></footer>
 </html>
