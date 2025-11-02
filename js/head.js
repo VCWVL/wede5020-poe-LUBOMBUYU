@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const metaViewport = '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
     const title = document.title || 'TechFlow Solutions';
     const metaDescription = document.querySelector('meta[name="description"]') ? '' : '<meta name="description" content="TechFlow Solutions empowers your business through Custom Software, Mobile Apps, and IT Consulting. Future-proof your digital presence.">';
+    const favicon = '<link rel="icon" type="image/jpeg" href="images/logo.jpeg">';
     const stylesheet = '<link rel="stylesheet" href="css/styles.css">';
 
     // Insert only if not already present
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!head.querySelector('meta[name="viewport"]')) head.insertAdjacentHTML('beforeend', metaViewport);
     if (!head.querySelector('title')) head.insertAdjacentHTML('beforeend', `<title>${title}</title>`);
     if (metaDescription) head.insertAdjacentHTML('beforeend', metaDescription);
+    if (!head.querySelector('link[rel="icon"]')) head.insertAdjacentHTML('beforeend', favicon);
     if (!head.querySelector('link[rel="stylesheet"][href="css/styles.css"]')) head.insertAdjacentHTML('beforeend', stylesheet);
 });
 

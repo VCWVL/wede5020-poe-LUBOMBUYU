@@ -84,9 +84,10 @@
 }
 
 .services-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.25rem, 1fr));
     gap: var(--spacing-2xl);
+    justify-items: center;
     justify-content: center;
 }
 
@@ -94,8 +95,6 @@
     background: var(--bg-light);
     box-shadow: 0 0.125rem 0.75rem rgba(0, 87, 163, 0.10); /* 2px 12px */
     border-radius: 0.75rem; /* 12px */
-    width: 21.25rem; /* 340px */
-    margin-bottom: var(--spacing-xl);
     padding: var(--spacing-xl) var(--spacing-lg);
     display: flex;
     flex-direction: column;
@@ -105,6 +104,7 @@
     border: 2px solid var(--primary-color);
     cursor: pointer;
     overflow: hidden;
+    position: relative;
 }
 
 .service-item:hover {
@@ -200,7 +200,10 @@
 
 .click-hint {
     text-align: center;
-    margin-top: var(--spacing-xl);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     color: #666;
     font-style: italic;
     transition: all 0.3s ease;

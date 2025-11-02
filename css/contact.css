@@ -1,3 +1,21 @@
+/* Contact Page Body Styles */
+body.contact-page {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.contact-page > * {
+    flex-shrink: 0;
+}
+
+body.contact-page footer.footer {
+    margin-top: auto;
+}
+
 /* Contact Section - Enhanced Modern Design */
 .contact {
     background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
@@ -599,6 +617,47 @@
         height: 200px;
     }
 }
+/* Footer Styles */
+/* Replace the problematic full-viewport footer rules with a flexible sticky footer */
+footer.footer {
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0057a3;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; /* keeps footer in normal flow; body.contact-page uses flex so margin-top:auto still works */
+}
+
+/* constrain and center the footer's inner content */
+footer.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* keep link and icon styles */
+footer.footer p,
+footer.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer.footer .social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
